@@ -1,18 +1,11 @@
 /********** Template CSS **********/
 :root {
-    --primary: #C55300;
-    --secondary: #FFC448;
+    --primary: #6244C5;
+    --secondary: #32DE8A;
     --light: #FAFAFB;
     --dark: #12141D;
 }
 
-body{
-    background-color: var(--dark);
-}
-
-h2, h3, h4, h5, h6, .nav-link {
-    color: var(--light) !important;
-}
 
 .back-to-top {
     position: fixed;
@@ -113,9 +106,13 @@ h2, h3, h4, h5, h6, .nav-link {
     background-color: var(--primary) !important;
 }
 
+.nav-link{
+    color: var(--light) !important;
+}
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--light);
 }
 
 @media (max-width: 991.98px) {
@@ -128,7 +125,7 @@ h2, h3, h4, h5, h6, .nav-link {
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/bg-header.png) left top no-repeat;
+    background: url(../img/frame-header.png) left top no-repeat;
 }
 
 .typed-cursor {
@@ -203,17 +200,11 @@ h2, h3, h4, h5, h6, .nav-link {
     }
 }
 
-.textAnimated{
-    color: var(--dark) !important;
+
+#home{
+    height: 100vh;
 }
 
-.skillsTitle{
-    color: var(--light);
-}
-
-.ui{
-    color: var(--primary) !important;
-}
 
 /* .nav-item{
     background-color: var(--primary) !important;
