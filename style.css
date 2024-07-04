@@ -158,6 +158,9 @@ nav{
   }
 
   @media (max-width:390px){
+    body{
+      overflow-x: hidden;
+    }
     .nome{
       font-size: 35px !important;
       margin-top: -200px;
