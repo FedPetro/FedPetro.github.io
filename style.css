@@ -143,7 +143,7 @@ nav{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2.14px;
-    background-color: red;
+
   }
 
   .fullStack{
@@ -207,6 +207,30 @@ nav{
     bottom: -130px;
   }
 
+  @media (max-width:767.98px){
+      #blob1{
+        top: 140px;
+        width: 20%;
+      }
+
+      #blob2{
+        left: 80px;
+        bottom: -280px;
+        width: 30%;
+      }
+
+      #blob4{
+        right: 80px;
+        top: 500px;
+        width: 20%;
+      }
+      #blob3{
+        left: 90px;
+        top: 290px;
+        width: 20%;
+      }
+    }
+
 /* chi sono */
 
 @media (max-width:767.98px){
@@ -249,6 +273,9 @@ nav{
   .card{
     margin-bottom: -60px;
   }
+  .sectionAbout{
+    margin-top: -200px;
+  }
 }
 
 .illustration, .about{
@@ -265,6 +292,7 @@ nav{
 #blob5{
   bottom: -1100px;
   right: 500px;
+  
 }
 
 #blob6{
@@ -280,6 +308,32 @@ nav{
 #blob8{
   top: 1200px;
   right: -100px;
+}
+
+@media (max-width:767.98px){
+  #blob5{
+    bottom: -1100px;
+    left: 60px;
+    width: 40%;
+  }
+  
+  #blob6{
+    left: -40px;
+    bottom: -590px;
+    width: 30%;
+  }
+  
+  #blob7{
+    left: 350px;
+    top: 1100px;
+    width: 30%;
+  }
+  
+  #blob8{
+    top: 1450px;
+    right: 10px;
+    width: 40%;
+  }
 }
 
 
@@ -360,6 +414,26 @@ nav{
   bottom:-2050px;
   right: -200px;
 }
+
+@media (max-width:767.98px){
+  #blob9{
+    top:1900px;
+    left: -50px;
+    width: 25%;
+  }
+  
+  #blob10{
+    top:1850px;
+    left: 500px;
+  }
+  
+  #blob11{
+    bottom:-1850px;
+    left: 345px;
+    width: 25%;
+  }
+}
+
 
 /* Progetti */
 @media (max-width:767.98px){
