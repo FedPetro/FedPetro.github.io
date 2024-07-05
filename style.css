@@ -16,7 +16,7 @@ main{
     margin-right: 10vh;
 }
 
-@media (max-width:991.98px){
+@media (max-width:767.98px){
   main{
     margin-left: 2vh;
     margin-right: 2vh;
@@ -158,7 +158,7 @@ nav{
     z-index: 200; */
   }
 
-  @media (max-width:991.98px){
+  @media (max-width:767.98px){
     body{
       overflow-x: hidden;
     }
@@ -209,7 +209,7 @@ nav{
 
 /* chi sono */
 
-@media (max-width:991.98px){
+@media (max-width:767.98px){
   .about{
     flex-direction: column;
   }
@@ -284,7 +284,7 @@ nav{
 
 
 /* skills */
-@media (max-width:991.98px){
+@media (max-width:767.98px){
   .linguaggi{
     flex-direction: column;
   }
@@ -362,7 +362,7 @@ nav{
 }
 
 /* Progetti */
-@media (max-width:991.98px){
+@media (max-width:767.98px){
   .tutti{
     margin-left: 0 !important;
     margin-right: 40px;
