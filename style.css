@@ -11,26 +11,10 @@ body {
     color: var(--main);
   }
 
-main{
+/* main{
     margin-left: 10vh;
     margin-right: 10vh;
-}
-
-@media (max-width:767.98px){
-  main{
-    margin-left: 2vh;
-    margin-right: 2vh;
-  }
-}
-
-
-
-@media (max-width: 991px){
-  .collapse{
-    justify-content: flex-start !important;
-    padding-left: 18px;
-  }
-}
+} */
 
 h1, h2, h3, h4, h5, p {
   color: var(--sec);
@@ -43,8 +27,69 @@ p{
   font-weight: 500;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+}
 
-/* navbar */  
+
+/* navbar */ 
+
+@media only screen and (max-width: 428px) {
+  /* main{
+    margin-left: 2vh;
+    margin-right: 2vh;
+} */
+  .navbar-nav {
+    width: 100%;
+    display: flex !important;
+    justify-content: start !important;
+  }
+
+  .sectionNome{
+    margin-top: -250px;
+  }
+
+  h1.nome{
+    font-size: 24.936px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.997px;
+    text-align: center;
+  }
+  h3.fullStack{
+    display: flex;
+    font-size: 22.389px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    letter-spacing: 2.911px;
+  }
+  .fotoCol{
+    margin-top: -100px;
+  }
+
+  .sectionAbout{
+    margin-top: -250px;
+  }
+
+  .illustrazione{
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .sectionSkills{
+    margin-top: -200px;
+  }
+
+  .descr{
+    margin-bottom: 20Jpx;
+  }
+}
 
 nav{
   background-color: var(--third) !important;
@@ -70,6 +115,8 @@ nav{
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
+
+
 
 /* icona navbar */
 .menuButton {
@@ -133,6 +180,7 @@ nav{
 
   .nomeFoto{
     padding-top: 40vh;
+    max-width: 1920px;
   }
 
   .nome{
@@ -158,200 +206,38 @@ nav{
     z-index: 200; */
   }
 
-  @media (max-width:767.98px){
-    body{
-      overflow-x: hidden;
-    }
-    .nome{
-      font-size: 35px !important;
-      margin-top: -200px;
-    }
-    .fullStack{
-      font-size: 20px !important;
-    }
-    .fotoCol{
-      margin-top: -50px;
-    }
-    .foto{
-      width: 80%;
-      display: flex;
-    }
-  }
-
 
   .foto{
     margin-top: 15vh;
   }
 
-  .blobs{
-    position: absolute;
-    z-index: -100;
-  }
-
-  #blob1{
-    top: 200px;
-  }
-
-  #blob4{
-    right: 140px;
-    top: 100px;
-  }
-
-  #blob3{
-    left: 400px;
-    top: 350px;
-  }
-
-  #blob2{
-    left: 120px;
-    bottom: -130px;
-  }
-
-  @media (max-width:767.98px){
-      #blob1{
-        top: 140px;
-        width: 20%;
-      }
-
-      #blob2{
-        left: 80px;
-        bottom: -280px;
-        width: 30%;
-      }
-
-      #blob4{
-        right: 80px;
-        top: 500px;
-        width: 20%;
-      }
-      #blob3{
-        left: 90px;
-        top: 290px;
-        width: 20%;
-      }
-    }
-
 /* chi sono */
 
-@media (max-width:767.98px){
-  .about{
-    flex-direction: column;
-  }
-  .illustration{
-    width: 200px;
-    height: 200px;
-    background-image: url(media/img/IllustrationMobile.svg);
-    background-size: contain;
-  }
-  .linguaggi{
-    flex-direction: column;
-  }
-  .scatola{
-    margin-bottom: 40px;
-  }
-  .tutti{
-    margin-left: 0 !important;
-    margin-right: 40px;
-  }
-  .frontend{
-    margin-right: 40px;
-  }
-  .progetti{
-    margin-bottom:2vh;
-  }
-  .sectionProg{
-    margin-top: 5vh;
-  }
-  .tipoProgetti{
-    display: flex;
-    width: 100%;
-    justify-content: start !important;
-  }
-  .cards{
-    margin-top: -100px;
-  }
-  .card{
-    margin-bottom: -60px;
-  }
-  .sectionAbout{
-    margin-top: -200px;
-  }
-}
-
-.illustration, .about{
-  padding-top: 10vh;
-}
-
-.illustration{
+/* .illustration{
   background-image: url(media/img/Illustration.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+  width: 100%;
+  min-height: 40vh;
+} */
 
-
-#blob5{
-  bottom: -1100px;
-  right: 500px;
-  
-}
-
-#blob6{
-  left: -130px;
-  bottom: -540px;
-}
-
-#blob7{
-  right: 800px;
-  top: 1200px;
-}
-
-#blob8{
-  top: 1200px;
-  right: -100px;
-}
-
-@media (max-width:767.98px){
-  #blob5{
-    bottom: -1100px;
-    left: 60px;
-    width: 40%;
-  }
-  
-  #blob6{
-    left: -40px;
-    bottom: -590px;
-    width: 30%;
-  }
-  
-  #blob7{
-    left: 350px;
-    top: 1100px;
-    width: 30%;
-  }
-  
-  #blob8{
-    top: 1450px;
-    right: 10px;
-    width: 40%;
-  }
-}
-
+/* .illustrazione{
+  max-width: 30vh;
+} */
 
 /* skills */
-@media (max-width:767.98px){
-  .linguaggi{
-    flex-direction: column;
-  }
-  .scatola{
-    margin-bottom: 40px;
-  }
+.scatolaLinguaggio{
+  display: flex;
 }
+
+
 
 .barra{
   background-color: var(--accent);
   width: 100%;
   height: 40%;
   border-radius: 50px;
+  
 }
 
 #barra1{
@@ -359,6 +245,7 @@ nav{
   height: 100%;
   background-color: var(--third);
   border-radius: 50px;
+  border-right: 2px solid var(--main);
 }
 
 #barra2{
@@ -366,6 +253,7 @@ nav{
   height: 100%;
   background-color: var(--third);
   border-radius: 50px;
+  border-right: 2px solid var(--main);
 }
 
 #barra3{
@@ -373,6 +261,7 @@ nav{
   height: 100%;
   background-color: var(--third);
   border-radius: 50px;
+  border-right: 2px solid var(--main);
 }
 
 #barra4{
@@ -380,6 +269,7 @@ nav{
   height: 100%;
   background-color: var(--third);
   border-radius: 50px;
+  border-right: 2px solid var(--main);
 }
 
 #barra5{
@@ -387,6 +277,7 @@ nav{
   height: 100%;
   background-color: var(--third);
   border-radius: 50px;
+  border-right: 2px solid var(--main);
 }
 
 #barra6{
@@ -394,66 +285,11 @@ nav{
   height: 100%;
   background-color: var(--third);
   border-radius: 50px;
-}
-
-.barraPiena{
   border-right: 2px solid var(--main);
-}
-
-#blob9{
-  top:2400px;
-  left: -80px;
-}
-
-#blob10{
-  top:1850px;
-  left: 500px;
-}
-
-#blob11{
-  bottom:-2050px;
-  right: -200px;
-}
-
-@media (max-width:767.98px){
-  #blob9{
-    top:1900px;
-    left: -50px;
-    width: 25%;
-  }
-  
-  #blob10{
-    top:1850px;
-    left: 500px;
-  }
-  
-  #blob11{
-    bottom:-1850px;
-    left: 345px;
-    width: 25%;
-  }
 }
 
 
 /* Progetti */
-@media (max-width:767.98px){
-  .tutti{
-    margin-left: 0 !important;
-    margin-right: 40px;
-  }
-  .frontend{
-    margin-right: 40px;
-  }
-  .tipoProgetti{
-    display: flex;
-    width: 100%;
-    justify-content: start !important;
-  }
-}
-
-.progetti{
-  margin-top: 10vh;
-}
 
 h5{
   display: inline-block;
@@ -483,7 +319,7 @@ h5:hover:after{
 /* card */
 
 .card{
-  margin-top: 20vh;
+  margin-top: 8vh;
 }
 
 .btn{
