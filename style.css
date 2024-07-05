@@ -143,6 +143,7 @@ nav{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2.14px;
+    background-color: red;
   }
 
   .fullStack{
@@ -231,10 +232,22 @@ nav{
   .frontend{
     margin-right: 40px;
   }
+  .progetti{
+    margin-bottom:2vh;
+  }
+  .sectionProg{
+    margin-top: 5vh;
+  }
   .tipoProgetti{
     display: flex;
     width: 100%;
     justify-content: start !important;
+  }
+  .cards{
+    margin-top: -100px;
+  }
+  .card{
+    margin-bottom: -60px;
   }
 }
 
