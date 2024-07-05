@@ -25,7 +25,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">          
+        <div class="container">          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <label class="menuButton" for="check">
                 <input type="checkbox" id="check">
@@ -58,7 +58,7 @@
 
         <!-- nome e foto -->
         <section class="sectionNome min-vh-100 align-content-center">
-            <div class="container-fluid ">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex flex-column nomeFoto">
                         <h1 class="nome">FEDERICO PETROCCHI</h1>
@@ -74,40 +74,32 @@
         </section>
 
         <!-- about -->
-        <section class="sectionAbout min-vh-100 align-content-center">
-          <div class="container-fluid d-flex">
-            <div class="col-12 col-md-5 d-flex justify-content-center illustrazione">
-              <img src="media/img/Illustration.svg" alt="" srcset="" class="">
-              <!-- <div class="illustration"></div> -->
+        <section class="sectionAbout min-vh-100 align-content-center ">
+          <div class="container d-flex justify-content-around">
+            <div class="row ">
+            <div class="col-12 col-md-6 d-flex illustrazione">
+              <!-- <img src="media/img/Illustration.svg" alt="" srcset="" class="illustration"> -->
+              <div class="illustration"></div>
             </div>
-          </div>
-
-            <div class="col-2 col-md-2">
-              <!-- colonna vuota -->
-            </div>
-
-            <div class="col-12 col-md-5 align-content-center about">
+            <div class="col-12 col-md-6 align-content-center about">
                 <h1 class="">CHI SONO?</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sit vero quos eum eius, saepe quis! Repudiandae corporis, ut praesentium nesciunt ducimus nam similique iste tempora itaque veritatis cupiditate magni porro ipsam iure sequi at quae odio distinctio molestiae, culpa sit. Id ipsa totam quo vitae a, quasi laudantium, praesentium veritatis obcaecati blanditiis delectus, possimus ad? Laudantium reprehenderit optio est.</p>
             </div>
           </div>
+        </div>
         </section>
 
 
         <!-- skills -->
         <section class="sectionSkills min-vh-100 align-content-center">
-          <div class="container-fluid d-flex">
+          <div class="container justify-content-around d-flex">
             <div class="row">
-            <div class="col-12 col-md-5 d-flex justify-content-center flex-column">
+            <div class="col-12 col-md-6 d-flex flex-column">
               <h1 class="">COSA FACCIO?</h1>
-              <p class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sit vero quos eum eius, saepe quis! Repudiandae corporis, ut praesentium nesciunt ducimus nam similique iste tempora itaque veritatis cupiditate magni porro ipsam iure sequi at quae odio distinctio molestiae, culpa sit. Id ipsa totam quo vitae a, quasi laudantium, praesentium veritatis obcaecati blanditiis delectus, possimus ad? Laudantium reprehenderit optio est.</p>
+              <p class="descr w-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sit vero quos eum eius, saepe quis! Repudiandae corporis, ut praesentium nesciunt ducimus nam similique iste tempora itaque veritatis cupiditate magni porro ipsam iure sequi at quae odio distinctio molestiae, culpa sit. Id ipsa totam quo vitae a, quasi laudantium, praesentium veritatis obcaecati blanditiis delectus, possimus ad? Laudantium reprehenderit optio est.</p>
             </div>
 
-            <div class="col-2 col-md-2">
-              <!-- colonna vuota -->
-            </div>
-
-            <div class="col-12 col-md-5 d-flex justify-content-center flex-column">
+            <div class="col-12 col-md-5 d-flex flex-column">
               <div class="scatolaLinguaggio d-flex">
                 <div class="linguaggio w-50">
                   <h2 class="my-auto">HTML</h2>
@@ -181,7 +173,7 @@
 
         <!-- i miei progetti -->
          <section class="sectionProg min-vh-100 align-content-center">
-          <div class="container-fluid">
+          <div class="container">
             <div class="row">
               <div class="col-12 col-md-6">
                 <h1>I MIEI PROGETTI</h1>
@@ -194,7 +186,7 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-4 cards">
-                <div class="card">
+                <div class="card mb-5">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
                   <div class="card__content">
                     <p class="card__title">Card Title
@@ -205,7 +197,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-4">
-                <div class="card">
+                <div class="card mb-5">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
                   <div class="card__content">
                     <p class="card__title">Card Title
@@ -216,7 +208,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-4">
-                <div class="card">
+                <div class="card mb-5">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
                   <div class="card__content">
                     <p class="card__title">Card Title

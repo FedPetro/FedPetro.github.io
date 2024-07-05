@@ -36,18 +36,33 @@ img{
 /* navbar */ 
 
 @media only screen and (max-width: 428px) {
-  /* main{
-    margin-left: 2vh;
-    margin-right: 2vh;
-} */
   .navbar-nav {
     width: 100%;
     display: flex !important;
     justify-content: start !important;
+    padding-left: 18px;
   }
 
   .sectionNome{
-    margin-top: -250px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sectionAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sectionSkills{
+    display: flex;
+    align-items: center;
+  }
+
+  .sectionProg{
+    display: flex;
+    align-items: center;
   }
 
   h1.nome{
@@ -72,22 +87,30 @@ img{
   .fotoCol{
     margin-top: -100px;
   }
-
-  .sectionAbout{
-    margin-top: -250px;
-  }
-
-  .illustrazione{
-    height: 300px;
+  .descr{
     margin-bottom: 20px;
   }
-
-  .sectionSkills{
-    margin-top: -200px;
+  .illustration{
+    width: 200px;
   }
-
-  .descr{
-    margin-bottom: 20Jpx;
+  .tipoProgetti{
+    display: flex;
+    justify-content: start !important;
+    width: 100%;
+  }
+  .tutti{
+    margin-left: 0 !important;
+  }
+  .tutti, .frontend, .backend{
+    margin-right: 60px;
+  }
+  .card{
+    width: 200px !important;
+    height: 120px !important;
+  }
+  main{
+    margin-left: 2vh;
+    margin-right: 2vh;
   }
 }
 
@@ -202,8 +225,6 @@ nav{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 6.244px;
-    /* position: relative;
-    z-index: 200; */
   }
 
 
@@ -213,24 +234,25 @@ nav{
 
 /* chi sono */
 
-/* .illustration{
+.illustration{
+  width:600px;
+  height: 600px;
   background-image: url(media/img/Illustration.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  min-height: 40vh;
-} */
+}
 
-/* .illustrazione{
-  max-width: 30vh;
-} */
+@media only screen and (max-width: 428px) {
+  .illustration {
+    max-width:600px;
+    max-height:600px;
+  }
+}
 
 /* skills */
 .scatolaLinguaggio{
   display: flex;
 }
-
-
 
 .barra{
   background-color: var(--accent);
@@ -317,10 +339,6 @@ h5:hover:after{
 
 
 /* card */
-
-.card{
-  margin-top: 8vh;
-}
 
 .btn{
   background-color: var(--accent);
