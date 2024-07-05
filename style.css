@@ -16,18 +16,13 @@ main{
     margin-right: 10vh;
 }
 
-@media (max-width:390px){
+@media (max-width:393px){
   main{
     margin-left: 2vh;
     margin-right: 2vh;
   }
 }
 
-@media (max-width:390px){
-  body{
-    overflow-x: hidden;
-  }
-}
 
 
 @media (max-width: 991px){
@@ -162,7 +157,7 @@ nav{
     z-index: 200; */
   }
 
-  @media (max-width:390px){
+  @media (max-width:393px){
     body{
       overflow-x: hidden;
     }
@@ -213,7 +208,7 @@ nav{
 
 /* chi sono */
 
-@media (max-width:390px){
+@media (max-width:393px){
   .about{
     flex-direction: column;
   }
@@ -276,7 +271,7 @@ nav{
 
 
 /* skills */
-@media (max-width:390px){
+@media (max-width:393px){
   .linguaggi{
     flex-direction: column;
   }
@@ -354,7 +349,7 @@ nav{
 }
 
 /* Progetti */
-@media (max-width:390px){
+@media (max-width:393px){
   .tutti{
     margin-left: 0 !important;
     margin-right: 40px;
