@@ -38,16 +38,16 @@
           <div class="collapse navbar-collapse d-flex justify-content-center"  id="navbarNav"> <!-- problemi da mobile, hamburger non si chiude -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Chi sono</a>
+                <a class="nav-link" aria-current="page" href="#chiSono">Chi sono</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Progetti</a>
+                <a class="nav-link" href="#progetti">Progetti</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contatti</a>
+                <a class="nav-link" href="#contatti">Contatti</a>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@
       <main>
 
         <!-- nome e foto -->
-        <section class="sectionNome min-vh-100 align-content-center">
+        <section class="sectionNome min-vh-100 align-content-center" id="nome">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex flex-column nomeFoto">
@@ -74,7 +74,7 @@
         </section>
 
         <!-- about -->
-        <section class="sectionAbout min-vh-100 align-content-center ">
+        <section class="sectionAbout min-vh-100 align-content-center" id="about">
           <div class="container d-flex justify-content-around">
             <div class="row ">
             <div class="col-12 col-md-6 d-flex illustrazione">
@@ -82,7 +82,7 @@
               <div class="illustration"></div>
             </div>
             <div class="col-12 col-md-6 align-content-center about">
-                <h1 class="">CHI SONO?</h1>
+                <h1 class="as">CHI SONO?</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sit vero quos eum eius, saepe quis! Repudiandae corporis, ut praesentium nesciunt ducimus nam similique iste tempora itaque veritatis cupiditate magni porro ipsam iure sequi at quae odio distinctio molestiae, culpa sit. Id ipsa totam quo vitae a, quasi laudantium, praesentium veritatis obcaecati blanditiis delectus, possimus ad? Laudantium reprehenderit optio est.</p>
             </div>
           </div>
@@ -91,7 +91,7 @@
 
 
         <!-- skills -->
-        <section class="sectionSkills min-vh-100 align-content-center">
+        <section class="sectionSkills min-vh-100 align-content-center" id="skills">
           <div class="container justify-content-around d-flex">
             <div class="row">
             <div class="col-12 col-md-6 d-flex flex-column">
@@ -172,7 +172,7 @@
 
 
         <!-- i miei progetti -->
-         <section class="sectionProg min-vh-100 align-content-center">
+         <section class="sectionProg min-vh-100 align-content-center" id="progetti">
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-6">
@@ -184,7 +184,7 @@
                 <a href=""><h5 class="backend">Backend</h5></a>
               </div>
             </div>
-            <div class="row">
+            <div class="row mt-3">
               <div class="col-12 col-md-4 cards">
                 <div class="card mb-5">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
@@ -236,12 +236,23 @@
 
         <!-- js bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-        <!-- mio js -->
-        <script src="script.js"></script>      
-        </body>
         
+        <!-- gsap -->
+       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
           
+       <!-- gsap scrolltrigger-->
+       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+       <!-- gsapscrollTo -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+      <!-- gsap text -->
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+      <!-- mio js -->
+      <script src="script.js"></script>      
+      </body>
+        
 
 
 

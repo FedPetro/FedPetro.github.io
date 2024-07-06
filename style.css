@@ -209,7 +209,7 @@ nav{
   .nome{
     color: var(--sec);
     font-family: Lexend;
-    font-size: 53.492px;
+    font-size: 45.492px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -220,12 +220,13 @@ nav{
   .fullStack{
     color: var(--accent);
     font-family: "Zilla Slab";
-    font-size: 48.028px;
+    font-size: 39.028px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 6.244px;
   }
+
 
 
   .foto{
@@ -237,9 +238,12 @@ nav{
 .illustration{
   width:600px;
   height: 600px;
-  background-image: url(media/img/Illustration.svg);
+  background-image: url(media/img/Illustration.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+.illustration:hover{
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 428px) {
