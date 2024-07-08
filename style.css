@@ -33,6 +33,8 @@ img{
 }
 
 
+
+
 /* navbar */ 
 
 @media only screen and (max-width: 428px) {
@@ -46,6 +48,10 @@ img{
   .sectionNome{
     display: flex;
     align-items: center;
+    background-image: url("media/img/section1Bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
   }
 
   .sectionAbout{
@@ -227,6 +233,15 @@ nav{
     letter-spacing: 6.244px;
   }
 
+  .sectionNome{
+    display: flex;
+    align-items: center;
+    background-image: url("media/img/section1Bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+  }
+
 
 
   .foto{
@@ -238,12 +253,21 @@ nav{
 .illustration{
   width:600px;
   height: 600px;
-  background-image: url(media/img/Illustration.png);
+  background-image: url(media/img/startRotation.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .illustration:hover{
   cursor: pointer;
+}
+
+.sectionAbout{
+  display: flex;
+  align-items: center;
+  background-image: url("media/img/sectionAboutBg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 
 @media only screen and (max-width: 428px) {
@@ -259,6 +283,15 @@ nav{
 /* skills */
 .scatolaLinguaggio{
   display: flex;
+}
+
+.sectionSkills{
+  display: flex;
+  align-items: center;
+  background-image: url("media/img/sectionSkillsBg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
 }
 
 .barra{
@@ -319,6 +352,14 @@ nav{
 
 
 /* Progetti */
+.sectionProg{
+  display: flex;
+  align-items: center;
+  background-image: url("media/img/sectionProgettiBg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
 
 h5{
   display: inline-block;
@@ -420,4 +461,3 @@ h5:hover:after{
   scale: 0;
   transform: rotate(-45deg);
 }
-
