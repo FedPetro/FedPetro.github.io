@@ -1,20 +1,23 @@
 
   :root{
-    --main: #FFFCFF;
+    --main: #fffcff;
     --sec: #0A100D;
-    --third: #40F99B;
+    /* --third: #40F99B; */
+    --third: #3AB795;
     --accent: #9381FF;
 }
 
 body {
     overflow-x: hidden;
-    color: var(--main);
+    /* color: var(--main); */
   }
 
-/* main{
-    margin-left: 10vh;
-    margin-right: 10vh;
-} */
+  #bg{
+    z-index: -100;
+    position:absolute;
+    width:100%;
+    min-height:100vh
+}
 
 h1, h2, h3, h4, h5, p {
   color: var(--sec);
@@ -36,94 +39,14 @@ img{
 
 
 /* navbar */ 
-
-@media only screen and (max-width: 428px) {
-  .navbar-nav {
-    width: 100%;
-    display: flex !important;
-    justify-content: start !important;
-    padding-left: 18px;
-  }
-
-  .sectionNome{
-    display: flex;
-    align-items: center;
-    background-image: url("media/img/section1Bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
-  }
-
-  .sectionAbout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sectionSkills{
-    display: flex;
-    align-items: center;
-  }
-
-  .sectionProg{
-    display: flex;
-    align-items: center;
-  }
-
-  h1.nome{
-    font-size: 24.936px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.997px;
-    text-align: center;
-  }
-  h3.fullStack{
-    display: flex;
-    font-size: 22.389px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 100%;
-    display: flex;    
-    justify-content: center;
-    letter-spacing: 2.911px;
-  }
-  .fotoCol{
-    margin-top: -100px;
-  }
-  .descr{
-    margin-bottom: 20px;
-  }
-  .illustration{
-    width: 200px;
-  }
-  .tipoProgetti{
-    display: flex;
-    justify-content: start !important;
-    width: 100%;
-  }
-  .tutti{
-    margin-left: 0 !important;
-  }
-  .tutti, .frontend, .backend{
-    margin-right: 60px;
-  }
-  .card{
-    width: 200px !important;
-    height: 120px !important;
-  }
-  main{
-    margin-left: 2vh;
-    margin-right: 2vh;
-  }
-}
-
 nav{
   background-color: var(--third) !important;
   border-radius: 0px 0px 20px 20px;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.13)) drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.08)) drop-shadow(0px 29px 11px rgba(0, 0, 0, 0.02)) drop-shadow(0px 45px 13px rgba(0, 0, 0, 0.00));
+}
+
+.logoImg{
+  width: 35px;
 }
 
 .nav-link{
@@ -133,7 +56,7 @@ nav{
 }
 
 .nav-link:hover{
-  color: var(--accent);
+  color: var(--main) !important;
 }
 
 .navbar-toggler, .menuButton {
@@ -207,6 +130,8 @@ nav{
 
   /* nome e foto */
 
+
+
   .nomeFoto{
     padding-top: 40vh;
     max-width: 1920px;
@@ -220,23 +145,22 @@ nav{
     font-weight: 700;
     line-height: normal;
     letter-spacing: 2.14px;
-
   }
 
   .fullStack{
-    color: var(--accent);
+    color: var(--sec);
     font-family: "Zilla Slab";
     font-size: 39.028px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 6.244px;
+    letter-spacing: 5.244px;
   }
 
   .sectionNome{
     display: flex;
     align-items: center;
-    background-image: url("media/img/section1Bg.png");
+    background-image: url("");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;  
@@ -248,12 +172,52 @@ nav{
     margin-top: 15vh;
   }
 
+
+  @media only screen and (max-width: 600px) {
+    
+    .nomeFoto{
+      margin-top: -400px;
+    }
+
+    .nome{
+      color: var(--sec);
+      font-family: Lexend;
+      font-size: 50.492px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2.14px;
+    }
+
+    .fullStack{
+      color: var(--sec);
+      font-family: "Zilla Slab";
+      font-size: 23.028px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2.244px;
+    }
+  
+    .sectionNome{
+      display: flex;
+      align-items: center;
+      background-image: url("");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;  
+    }
+  
+    .fotoCol{
+      margin-top: -80px;
+    }
+  }
 /* chi sono */
 
 .illustration{
   width:600px;
-  height: 600px;
-  background-image: url(media/img/startRotation.png);
+  height: 500px;
+  background-image: url(media/img/Illustration.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -264,10 +228,17 @@ nav{
 .sectionAbout{
   display: flex;
   align-items: center;
-  background-image: url("media/img/sectionAboutBg.png");
+  background-image: url("");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;  
+}
+
+.fumetto{
+  background-color: var(--main);
+  border: 8px solid var(--sec);
+  color: var(--sec);
+  border-radius: 15px;
 }
 
 @media only screen and (max-width: 428px) {
@@ -288,7 +259,7 @@ nav{
 .sectionSkills{
   display: flex;
   align-items: center;
-  background-image: url("media/img/sectionSkillsBg.png");
+  background-image: url("");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;  
@@ -350,12 +321,19 @@ nav{
   border-right: 2px solid var(--main);
 }
 
+#barra6{
+  width: 80%;
+  height: 100%;
+  background-color: var(--third);
+  border-radius: 50px;
+  border-right: 2px solid var(--main);
+}
 
 /* Progetti */
 .sectionProg{
   display: flex;
   align-items: center;
-  background-image: url("media/img/sectionProgettiBg.png");
+  background-image: url("");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;  
@@ -411,6 +389,7 @@ h5:hover:after{
   justify-content: center;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
 }
 
 .card svg {
@@ -460,4 +439,23 @@ h5:hover:after{
 .card:hover svg {
   scale: 0;
   transform: rotate(-45deg);
+}
+
+.badge{
+  background-color: var(--third);
+  border: 2px solid var(--accent);
+}
+
+.cardImg1{
+  background-image: url('Progetti/Rubrica/rubricajs.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardImg2{
+  background-image: url('Progetti/Videogames/media/videogames.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

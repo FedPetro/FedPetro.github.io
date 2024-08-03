@@ -2,6 +2,25 @@ gsap.registerPlugin(ScrollTrigger); //Plugin gsap scrollTrigger
 gsap.registerPlugin(ScrollToPlugin); //Plugin gsap scrollTo
 gsap.registerPlugin(TextPlugin); //Plugin gsap text
 
+// sfondo
+window.addEventListener('DOMContentLoaded', () =>{
+    VANTA.FOG({
+        el: "#bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0xffffff,
+        midtoneColor: 0xd08fff,
+        lowlightColor: 0xffffff,
+        baseColor: 0xffffff,
+        blurFactor: 0.27,
+        zoom: 3.00
+      })
+})
+
+
 //animazioni su nome e lavoro
 let tlNomeLavoro = gsap.timeline();
 
@@ -22,8 +41,8 @@ tlNomeLavoro.fromTo( ".un",
 );
 
 tlNomeLavoro.fromTo(".fortissimo", 
-    {x:-600},
-    {x:0, color:'#FFFCFF', backgroundColor:'#9381FF', borderRadius:'5px'}
+    {y:0, scale:0},
+    {y:0, scale:1, color:'#FFFCFF', backgroundColor:'#9381FF', borderRadius:'5px', paddingLeft:'10px', paddingRight:'10px',}
 )
 
 tlNomeLavoro.fromTo(".fullStack", 
@@ -33,22 +52,31 @@ tlNomeLavoro.fromTo(".fullStack",
 
 
 tlNomeLavoro.to(".fullStack", {
+    duration: 3,
+    text: "Full Stack Web Developer",
+})
+
+tlNomeLavoro.to(".fullStack", {
     duration: 1,
-    text: "Full Stack Web Developer"
+    paddingLeft:'10px', 
+    paddingRight:'10px',
+    backgroundColor: '#3AB795',
+    borderRadius:'10px',
+    color: '#fffcff'   
 })
 
 
 
-tlNomeLavoro.to(".fortissimo", {
-    duration: 4,
-    delay: 1,
-    text: "",
-})
+// tlNomeLavoro.to(".fortissimo", {
+//     duration: 4,
+//     delay: 1,
+//     text: "",
+// })
 
-tlNomeLavoro.to(".fortissimo", {
-    backgroundColor:'#FFFCFF',
-    duration: 0.1
-})
+// tlNomeLavoro.to(".fortissimo", {
+//     backgroundColor:'#FFFCFF',
+//     duration: 0.1
+// })
 
 
     // scrollTrigger:{ //abilità l'esecuzione solo quando rientra nella viewport
@@ -72,16 +100,23 @@ let illRotation = gsap.to(".illustration", {
     yoyo: false, // this will alternate back and forth on each repeat on true. Like a yoyo    
 });
 
+let fumettoText = document.querySelector('#fumettoWrapper');
+
+
 // pausa rotazione illustrazione quando  clicco
 function stopRotation(){
     document.querySelector(".illustration").addEventListener("click", function() { //al click fai qualcosa
         if (illRotation.isActive()) { //se l'animazione è attiva metti in pausa
             illRotation.pause();
-            this.style.backgroundImage = "url('media/img/stopRotation.png')" //cambia immagine
+            this.style.backgroundImage = "url('media/img/startRotation.png')" //cambia immagine
+            fumettoText.innerHTML = `
+            <p class="h-100 align-content-center">Io che guardo i Tutorial su come usarla</p>` //cambia il testo del fumetto 
         } else {
             illRotation.resume(); //se riclicco riprendi
-            this.style.backgroundImage = "url('media/img/startRotation.png')" //usa immagine di default impostata in css
-        }
+            this.style.backgroundImage = "url('media/img/Illustration.png')" //usa immagine di default impostata in css
+                        fumettoText.innerHTML = `
+            <p class="h-100 align-content-center">Io che trovo una nuova libreria JS</p>` //ripristina il testo del fumetto 
+        } 
     });
 }
 
