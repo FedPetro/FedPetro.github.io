@@ -13,7 +13,7 @@
 
 body {
     overflow-x: hidden;
-    /* color: var(--main); */
+    background-color: var(--main);
   }
 
   #bg{
@@ -48,8 +48,7 @@ a:hover{
 
 /* navbar */ 
 nav{
-  background-color: var(--sec) !important;
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 7px 7px rgba(0, 0, 0, 0.13)) drop-shadow(0px 16px 10px rgba(0, 0, 0, 0.08)) drop-shadow(0px 29px 11px rgba(0, 0, 0, 0.02)) drop-shadow(0px 45px 13px rgba(0, 0, 0, 0.00));
+  background-color: none !important;
 }
 
 .logoImg{
@@ -57,14 +56,14 @@ nav{
 }
 
 .nav-link{
-  color: var(--main);
+  color: var(--sec);
   font-weight: bold;
   font-family: Lexend;
 }
 
 .nav-link:hover{
   text-decoration: underline !important;
-  color: var(--main);
+  /* color: var(--main); */
 }
 
 
@@ -166,8 +165,18 @@ nav{
     background-repeat: no-repeat;
    }
 
+   .aulab{
+    text-decoration: underline;
+    color: var(--accent);
+   }
+
    /* progetti */
 
    .progetti{
     margin-top: 200px;
+   }
+
+   .banner{
+    background-color: var(--accent);
+    color: var(--main);
    }
