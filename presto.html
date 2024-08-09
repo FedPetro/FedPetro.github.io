@@ -35,271 +35,257 @@
     
     <nav class="navbar navbar-expand-lg w-100">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#"><img src="" class="logoImg ms-md-3" alt=""></a>       -->
+            <a class="navbar-brand" href="/indexPortfolio.html"></i>Home</a>      
             <div class="d-flex flex-row align-items-md-center w-100 justify-content-around pt-2">
                 <ul class="navbar-nav d-flex flex-row">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Torna alla Home</a>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" aria-current="page" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#funzionalit">Funzionalità</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#repository">Repository</a>
                     </li>
                 </ul>
-            </div>
-            
+            </div>       
         </div>
     </nav>
     
     
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <h1 class="text-center mt-3">Presto.it</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <video src="Progetti/Presto/media/presto-compressed.mp4" type="video/mp4" controls autoplay controlsList="nodownload" class="video d-flex justify-content-center w-100">
-                </video>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="container mt-3">      
-        <div class="row d-flex justify-content-around">
-            <div class="col-2 col-md-2">
-                <div class="lingDiv d-flex flex-column align-items-center">
-                    <div class="ling lingMob"  id="html">
-                    </div>
-                    <div class="lingText d-flex justify-content-center">
-                        <p class="fs-6 fw-bold">HTML</p>
-                    </div>
+    <section class="videoSection d-flex vh-100 flex-column justify-content-around" id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h1 class="text-center mt-md-3">Presto.it</h1>
                 </div>
-            </div> 
-            
-            <div class="col-3 col-md-2">
-                <div class="lingDiv d-flex flex-column align-items-center">
-                    <div class="ling lingMob"  id="css">
-                    </div>
-                    <div class="lingText d-flex justify-content-center">
-                        <p class="fs-6 fw-bold">CSS</p>
-                    </div>
-                </div>
-            </div>  
-            
-            <div class="col-2 col-md-2">
-                <div class="lingDiv d-flex flex-column align-items-center">
-                    <div class="ling lingMob"  id="bootstrap">
-                    </div>
-                    <div class="lingText d-flex justify-content-center">
-                        <p class="fs-6 fw-bold">Bootstrap</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-2 col-md-2">
-                <div class="lingDiv d-flex flex-column align-items-center">
-                    <div class="ling lingMob"  id="laravel">
-                    </div>
-                    <div class="lingText d-flex justify-content-center">
-                        <p class="fs-6 fw-bold">Laravel</p>
-                    </div>
-                </div>
-            </div> 
-            
-            <div class="col-2 col-md-2">
-                <div class="lingDiv d-flex flex-column align-items-center">
-                    <div class="ling lingMob"  id="livewire">
-                    </div>
-                    <div class="lingText d-flex justify-content-center">
-                        <p class="fs-6 fw-bold">Livewire</p>
-                    </div>
-                </div>
-            </div> 
-        </div>            
-    </div>
-    
-    
-    <div class="container mt-5 d-flex justify-content-center">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <h2>Funzionalità</h2>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-12">
-                <h4>Registrazione e Login</h4>
-            </div>
-        </div>
-        <div class="row d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-6">
-                <!-- inserire video -->
-            </div>
-            <div class="col-12 col-md-6">
-                <p>Grazie a Fortify andiamo a gestire le logiche backend che ci permetteranno di gestire l'autenticazione degli utenti. Queste saranno collegate a 2 viste, una per il Login ed una per la Registrazione, composte entrambe da un form avente 4 campi richiesti da Fortify.</p>
-                <p>A questi aggiungeremo anche delle regole di validazione, così da obbligare l'utente a compilare tutti i campi a seconda delle condizioni da noi imposte.</p>
-                <p>Gli utenti saranno "salvati" nel nostro database, così da poter effettuare un logout e ri-loggarsi a loro piacimento.</p>
-            </div>
-        </div>
-        
-        <div class="row d-flex flex-column flex-md-row mt-5">
-            <div class="col-12 col-md-6">
-                <h4>Aggiunta degli articoli</h4>
-            </div>
-        </div> 
-        <div class="row d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-6 d-flex">
-                <!-- inserire video -->
-            </div>
-            <div class="col-12 col-md-6">
-                <p>Tramite Livewire abbiamo costruito un form che ci permetterà di salvare gli attributi di ogni articolo caricato nelle tabelle/colonne dedicate nel nostro database. Il caricamento di un articolo è permesso solo agli utenti registrati.</p>
-                <p>Ogni articolo inoltre, può avere un solo proprietario, questo perchè sono legati da una relazione One To One. </p>
-            </div>
-        </div>
-        
-        <div class="row d-flex flex-column flex-md-row mt-5">
-            <div class="col-12 col-md-6">
-                <h4>Approvazione degli annunci</h4>
-            </div>
-        </div> 
-        <div class="row d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-6 d-flex">
-                <!-- inserire video -->
-            </div>
-            <div class="col-12 col-md-6">
-                <p>Agli utenti registrati abbiamo dato la possibilità di collaborare con noi con il ruolo di Revisore. Questi si occuperanno di accettare o rifiutare gli articoli messi in vendita dagli altri utenti.</p>
-                <p>Per fare richiesta, basterà compilare un form raggiungibile tramite footer, il quale permetterà tramite MailTrap ed il mailable di Laravel, di contattare un Admin che potrà scegliere se renderlo revisore oppure no.</p>
-                <p>Abbiamo inoltre aggiunto un pulsante di Undo, ovvero che permetta di mandare di nuovo in revisione l'ultimo articolo accettato, in caso fosse stato commesso un errore dal Revisore.</p>
-            </div>
-        </div>
-        
-        <div class="row d-flex flex-column flex-md-row mt-5">
-            <div class="col-12 col-md-6">
-                <h4>Interfaccia multilingua</h4>
-            </div>
-        </div> 
-        <div class="row d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-6 d-flex">
-                <!-- inserire video -->
-            </div>
-            <div class="col-12 col-md-6">
-                <p>Tramite il Middleware andiamo a gestire le lingue del nostro sito creando le traduzioni.</p>
-                <p>Queste sono state create e modificate in apposite cartelle, che saranno poi collegate ad ogni testo che vedremo per tutta l'interfaccia utente.</p>
-            </div>
-        </div>
-        
-        <div class="row d-flex flex-column flex-md-row mt-5">
-            <div class="col-12 col-md-6">
-                <h4>Barra di ricerca degli annunci</h4>
-            </div>
-        </div> 
-        <div class="row d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-6 d-flex">
-                <!-- inserire video -->
-            </div>
-            <div class="col-12 col-md-6">
-                <p>Attraverso il pacchetto di Laravel, Scout e un driver, TNT Search diamo la possibilità ad un qualsiasi utente di cercare un determinato articolo semplicemente scrivendo nella barra di ricerca presente nella nostra navbar.</p>
-                <p>Questo renderà la ricerca di determinati articoli molto più rapida al nostro utente, bypassando la navigazione tra di essi tramite le categorie.</p>
-            </div>
-            
-            <div class="row d-flex flex-column flex-md-row mt-5">
-                <div class="col-12 col-md-6">
-                    <h4>Caricamento immagini multiple</h4>
-                </div>
-            </div> 
-            <div class="row d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-6 d-flex">
-                    <!-- inserire video -->
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>Una relazione one to many ci permetterà di collegare un singolo articolo a più immagini, così da permetterci di caricarne più di una tramite il form. </p> 
-                    <p>Prima del caricamento avremo anche una preview delle immagini che ci darà la possibilità di eliminarle una ad una.</p>
-                </div>
-            </div>
-            
-            <div class="row d-flex flex-column flex-md-row mt-5">
-                <div class="col-12 col-md-6">
-                    <h4>Crop automatico delle immagini</h4>
-                </div>
-            </div> 
-            <div class="row d-flex flex-column flex-md-row ">
-                <div class="col-12 col-md-6 d-flex">
-                    <!-- inserire video -->
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>Molte immagini vuol dire anche molto disordine, per questo abbiamo deciso di servirci di Spatie Image che avrà il compito di croppare automaticamente le immagini ad una grandezza predefinità per ogni articolo.</p>
-                    <p>Tutto ciò verrà svolto in maniera asincrona così da non rallentare la nostra web application e potremmo anche decidere le dimensioni di crop secondo i nostri gusti.</p>
-                </div>
-            </div>
-            
-            <div class="row d-flex flex-column mt-5">
-                <div class="col-12 col-md-6">
-                    <h4>Check dei contenuti attraverso AI</h4>
-                </div>
-            </div> 
-            <div class="row d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-6 d-flex">
-                    <!-- inserire video -->
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>L'AI, tramite Google Vision Api, permetterà all'utente di avere una rapida scannerizzazione dell'articolo che creerà delle hastags categorizzandolo a priori e a noi, di segnalarci se sono presenti contenuti inappropriati.</p>
-                    <p></p>
-                </div>
-            </div>
-            
-            <div class="row d-flex flex-column flex-md-row mt-5">
-                <div class="col-12 col-md-6">
-                    <h4>Censura dei volti attraverso AI</h4>
-                </div>
-            </div> 
-            <div class="row d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-6 d-flex">
-                    <!-- inserire video -->
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>La privacy è ormai sempre più presa in considerazione da chiunque e quindi abbiamo deciso di implementare nel nostro applicativo una funzione fornita da Laravel che permette di oscurare i volti qualora siano presenti nelle foto degli articoli caricati.</p>
-                </div>
-            </div>
-            
-            <div class="row d-flex flex-column flex-md-row mt-5">
-                <div class="col-12 col-md-6">
-                    <h4>Watermark</h4>
-                </div>
-            </div> 
-            <div class="row d-flex flex-column flex-md-row">
-                <div class="col-12 col-md-6 d-flex">
-                    <!-- inserire video -->
-                </div>
-                <div class="col-12 col-md-6">
-                    <p>Teniamo alle nostre risorse e sappiamo quanto sia importante la visibilità oggi giorno, quindi ancora una volta sfrutteremo Spatie Image.</p>
-                    <p>Questa volta infatti, ci permetterà di apporre sulla foto di ogni articolo un Watermark, così da non permettere ad utenti esterni di utilizzare le foto sul nostro sito per scopi personali e qualora lo facessero, guadagneremo visibilità grazie al piccolo logo riconducibile a noi.</p>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-    
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 col-md-12 ">           
-                <h4>Guarda la Repository:</h4>
             </div>
             <div class="row">
-                <div class="col-12 col-md-12 d-flex">
-                    <p class="fs-4 fw-bold"><i class="bi bi-github me-2"></i></p>
-                    <p class="fs-4 fw-bold"><a href="https://github.com/FedPetro/progetto_laravel11">Presto.it</a></p>
+                <div class="col-12 col-md-12">
+                    <video src="Progetti/Presto/media/presto-compressed.mp4" type="video/mp4" controls autoplay controlsList="nodownload" class="video d-flex justify-content-center w-100">
+                    </video>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-3">
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="html">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">HTML</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-3 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="css">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">CSS</p>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="bootstrap">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="laravel">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">Laravel</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="livewire">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">Livewire</p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </section>
+    
+    <section class="funz d-flex flex-column" id="funzionalit" data-aos="fade-up">
+        <div class="container mt-5 d-flex">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h2>Funzionalità</h2>
                 </div>
             </div>
         </div>
-    </div>
+        
+        <div class="container mt-3">           
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-person-circle me-2"></i>Registrazione e Login</h4>
+                </div>
+            </div>
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>L'utente potrà registrarsi ed effettuare il login a suo piacimento. I dati di registrazione inseriti, sono soggetti a regole di validazione.</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-database-fill-add me-2"></i> Aggiunta degli articoli</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>Solo l'utente registrato potrà caricare degli articoli, che saranno legati a lui attraverso una relazione One to One e salvati nel nostro database.</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-check2 me-2"></i> Approvazione degli annunci</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>L'utente registrato potrà chiedere di diventare Revisore avendo così la possibilità di accettare o rifiutare gli articoli caricati dagli altri utenti.<br>Inoltre sarà possibile mandare di nuovo in revisione l'ultimo articolo accettato o rifiutato</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-translate me-2"></i>Interfaccia multilingua</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>Tramite la navbar l'utente potrà scegliere se navigare sul nostro sito in italiano, inglese o spagnolo. <br>Tutti i testi, ad eccezione dei dati degli articoli, saranno tradotti in una di queste lingue. </p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-6">
+                    <h4><i class="bi bi-search me-2"></i>Barra di ricerca degli annunci</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>Nella navbar è presente una barra di ricerca dove l'utente potrà cercare l'articolo che desidera, facendo scattare dei filtri di ricerca.</p>
+                </div>
+                
+                <div class="row d-flex flex-column flex-md-row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h4><i class="bi bi-camera-fill me-2"></i>Immagini multiple</h4>
+                    </div>
+                </div> 
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-6">
+                        <p>L'utente potrà scegliere se caricare una o più immagini dell'articolo che verranno mostrate in una piccola anteprima. Queste, potranno essere anche rimosse prima del caricamento definitivo dell'articolo.</p> 
+                    </div>
+                </div>
+                
+                <div class="row d-flex flex-column flex-md-row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h4><i class="bi bi-crop me-2"></i>Crop delle immagini</h4>
+                    </div>
+                </div> 
+                <div class="row d-flex flex-column flex-md-row ">
+                    <div class="col-12 col-md-6">
+                        <p>Ogni singola immagine dell'articolo viene automaticamente croppata con un ratio da noi definito. Ciò garantirà ordine a tutte le pagine dell'applicativo.</p>
+                    </div>
+                </div>
+                
+                <div class="row d-flex flex-column mt-5">
+                    <div class="col-12 col-md-12">
+                        <h4><i class="bi bi-hand-thumbs-up-fill me-2"></i>Check dei contenuti </h4>
+                    </div>
+                </div> 
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-12">
+                        <p>Grazie a Google Vision Api (AI), gli articoli saranno controllati automaticamente prima di arrivare al Revisore, il quale potrà vedere se il contenuto di essi sarà sensibile.</p>
+                    </div>
+                </div>
+                
+                <div class="row d-flex flex-column flex-md-row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h4><i class="bi bi-emoji-smile-fill me-2"></i> Censura dei volti</h4>
+                    </div>
+                </div> 
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-12">
+                        <p>Qualora ci dovessero essere foto degli articoli aventi dei volti, questi vengono automaticamente censurati in fase di caricamento.</p>
+                    </div>
+                </div>
+                
+                <div class="row d-flex flex-column flex-md-row mt-5">
+                    <div class="col-12 col-md-12">
+                        <h4><i class="bi bi-c-circle-fill me-2"></i>Watermark</h4>
+                    </div>
+                </div> 
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-12">
+                        <p>Ogni foto dell'articolo avrà un Watermark così da rivendicare l'appartenenza dei contenuti del nostro sito e salvaguardare la privacy dei nostri utenti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="repo d-flex flex-column" id="repository" data-aos="fade-up">   
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-12 ">           
+                    <h4>Guarda la Repository:</h4>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 d-flex">
+                        <p class="fs-4 fw-bold"><i class="bi bi-github blackGithub me-2"></i></p>
+                        <p class="fs-4 fw-bold"><a href="https://github.com/FedPetro/progetto_laravel11">Presto.it</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <div class="container mt-3 mb-5">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="indietro d-flex justify-content-center">
+                        <div class="homeBtn">
+                            <a href="/indexPortfolio.html"><button class="btn">Torna alla Home</button></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
     
     
-    
-    
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 copyright">© Federico Petrocchi</span>
+        </div>
+        
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="mailto:petrocchi.federico@gmail.com"><i class="bi bi-envelope me-2 display-6"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/federico-petrocchi/"><i class="bi bi-linkedin me-2 display-6"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/FedPetro"><i class="bi bi-github me-2 display-6"></i></a></li>
+        </ul>
+    </footer>
     
     
     

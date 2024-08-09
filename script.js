@@ -3,6 +3,9 @@ let navLinks = document.querySelectorAll('a[href^="#"]'); //vai a catturare tutt
 
 //funzione per scrollare a sezioni
 
+console.log(navLinks);
+
+
 navLinks.forEach(link => { //cicla tutti i link
         let hash = link.hash //tramite .hash recupero il contenuto in href="questoContenuto"
         link.addEventListener("click", (e) => { //al click sul link vado a fare...

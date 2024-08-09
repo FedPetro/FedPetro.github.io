@@ -47,16 +47,13 @@
               <li class="nav-item px-3">
                 <a class="nav-link" href="#progetti">Progetti</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contatti">Contatti</a>
-              </li>
+
             </ul>
-          </div>
-        
+          </div>        
       </div>
     </nav>
     
-    <section class="nomeFoto vh-100 d-flex align-items-center">
+    <section class="nomeFoto vh-100 d-flex align-items-center" data-aos="fade-up"> 
       <!-- nome e foto -->
       <div class="container">
         <div class="row">
@@ -83,7 +80,7 @@
     
     <!-- about -->
     
-    <section class="about vh-100 d-flex align-content-center " id="chiSono">
+    <section class="about vh-100 d-flex align-content-center " id="chiSono" data-aos="fade-up">
       <div class="container">        
         <div class="row">
           <div class="col-12 col-md-12 d-flex justify-content-md-center">
@@ -142,7 +139,7 @@
     </section>
     
     <!-- Skills -->
-    <section class="skills d-flex align-content-center" id="skills">
+    <section class="skills d-flex align-content-center" id="skills" data-aos="fade-up">
       <div class="container align-content-center">
         <div class="row">
           <div class="col-12 col-md-12 d-flex justify-content-md-center">
@@ -247,12 +244,22 @@
         </div>
 
         <div class="row mt-4">
-          <div class="col-12 col-md-12">
+          <div class="col-6 col-md-6">
             <div class="lingDiv d-flex flex-column align-items-center">
               <div class="ling"  id="github">
               </div>
               <div class="lingText d-flex justify-content-center">
                 <h5 class="">GitHub</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6">
+            <div class="lingDiv d-flex flex-column align-items-center">
+              <div class="ling"  id="react">
+              </div>
+              <div class="lingText d-flex justify-content-center flex-column">
+                <h5 class="text-center">React</h5>
+                <p class="banner border border-1 px-2 rounded-2">In apprendimento</p>
               </div>
             </div>
           </div>
@@ -269,7 +276,7 @@
   </section>
   
   <!-- progetti -->
-  <section class="progetti d-flex align-content-center" id="progetti">
+  <section class="progetti d-flex align-content-center mb-5" id="progetti" data-aos="fade-up">
     <div class="container align-content-center">
       <div class="row">
         <div class="col-12 col-md-12 d-flex justify-content-md-center">
@@ -327,48 +334,24 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
-  
-  
-  <!-- contatti -->
-  <section class="contatti vh-100 d-flex align-content-center" id="contatti">
-    <div class="container align-content-center">
-      <div class="row">
-        <div class="col-12 col-md-4 d-flex justify-content-md-center w-100">
-          <h1>Contatti</h1>
-        </div>
-      </div>
-        
-        <div class="row mt-2">
-          <div class="col-4 col-md-4 d-flex">
-            <div class="mail d-flex justify-content-center flex-column align-items-center">
-            <h6 class="display-1"><a href="mailto:petrocchi.federico@gmail.com"><i class="bi bi-envelope me-2 d-flex justify-content-center w-100"></i></a></h6>
-            <p class="fs-5">E-mail</p>
-          </div>
-          </div>
-          <div class="col-4 col-md-4 d-flex">
-            <div class="mail d-flex justify-content-center flex-column align-items-center">
-            <h6 class="display-1"><a href="https://www.linkedin.com/in/federico-petrocchi/"><i class="bi bi-linkedin me-2 d-flex justify-content-center w-100"></i></a></h6>
-            <p class="fs-5">LinkedIn</p>
-          </div>
-          </div>
-          <div class="col-4 col-md-4 d-flex">
-            <div class="mail d-flex justify-content-center flex-column align-items-center">
-            <h6 class="display-1"><a href="https://github.com/FedPetro"><i class="bi bi-github me-2 d-flex justify-content-center w-100"></i></a></h6>
-            <p class="fs-5">GitHub</p>
-          </div>
-        </div>
-        </div>
 
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 copyright">© Federico Petrocchi</span>
     </div>
-  </section>
 
-
-  
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="mailto:petrocchi.federico@gmail.com"><i class="bi bi-envelope me-2 display-6"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/federico-petrocchi/"><i class="bi bi-linkedin me-2 display-6"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://github.com/FedPetro"><i class="bi bi-github me-2 display-6"></i></a></li>
+    </ul>
+  </footer>
   
   
   

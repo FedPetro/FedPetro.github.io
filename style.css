@@ -55,13 +55,13 @@ nav{
   width: 35px;
 }
 
-.nav-link{
+.nav-link, .navbar-brand {
   color: var(--sec);
   font-weight: bold;
   font-family: Lexend;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: underline !important;
   /* color: var(--main); */
 }
@@ -166,6 +166,12 @@ nav{
     background-repeat: no-repeat;
    }
 
+   #react{
+    background-image: url("media/react.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
    .aulab{
     text-decoration: underline;
     color: var(--accent);
@@ -234,4 +240,30 @@ nav{
       background-repeat: no-repeat;
       background-size: 60%;
      }
+
+     #react{
+      background-image: url("media/react.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
   }
+
+  .repo{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer{
+    background-color: var(--sec);
+  }
+
+  .copyright, .bi-envelope, .bi-linkedin, .bi-github{
+    color: var(--main);
+  }
+
+.blackGithub{
+  color: var(--sec);
+}
