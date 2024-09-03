@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+}
+
+.title{
+    z-index: 50;
+    margin-top: 58px;
+    color: #000;
+    font-family: Lato;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 1;
+}
+
+.drumkit{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.drumkit-img{
+    width: 532px;
+    height: 485px;
+    margin-top: 50px;
+    z-index: 2;
+    
+}
+
+.letter-w, .letter-a, .letter-s, .letter-d, .letter-f, .letter-g, .letter-h, .letter-j {
+    width: 68.378px;
+    height: 54.89px;
+    border-radius: 14.865px;
+    border: 3.716px solid #000;
+    background: #FFF;
+    box-shadow: 0px 1.48649px 2.97297px 0px rgba(0, 0, 0, 0.39), 0px 5.2027px 5.2027px 0px rgba(0, 0, 0, 0.34), 0px 11.14865px 6.68919px 0px rgba(0, 0, 0, 0.20), 0px 19.32433px 7.43243px 0px rgba(0, 0, 0, 0.06), 0px 30.47297px 8.17568px 0px rgba(0, 0, 0, 0.01);
+    margin-right: 31.62px;
+    justify-content: center;
+    margin-top: 40px;
+    color: #000;
+    font-family: Lato;
+    font-size: 29.73px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    z-index: 1;
+} 
+
+.button-clicked{
+    background: #DD6E42;
+    transition: background-color 0.2s;
+}
+
+
+.kick-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: 300px;
+    margin-left: 50px;
+    color: #DD6E42;
+}
+
+.snare-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: -0px;
+    margin-left: 300px;
+    width: 51.862px;
+    height: 64px;
+    color: #DD6E42;
+}
+
+.perc1-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: -300px;
+    margin-left: 150px;
+}
+
+.hh-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: -200px;
+    margin-left: 590px;
+    color: #DD6E42;
+}
+
+.oh-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: -230px;
+    margin-left: -480px;
+    color: #DD6E42;
+}
+
+.perc3-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: 60px;
+    margin-left: -500px;
+    color: #DD6E42;
+}
+
+.perc2-icon{
+    position: absolute;
+    z-index: 100;
+    margin-top: -300px;
+    margin-left: -70px;
+    color: #DD6E42;
+}
+
+
+.btnHome{
+    background-color: #212529;
+    color:#f8f9fa;
+}
+
+.btnHome:hover{
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 1px solid #212529;
+  }
