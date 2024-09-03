@@ -35,91 +35,82 @@ body{
     width: 532px;
     height: 485px;
     margin-top: 50px;
-    z-index: 2;
-    
+    z-index: 2; 
 }
 
 .letter-w, .letter-a, .letter-s, .letter-d, .letter-f, .letter-g, .letter-h, .letter-j {
-    width: 68.378px;
-    height: 54.89px;
-    border-radius: 14.865px;
-    border: 3.716px solid #000;
-    background: #FFF;
-    box-shadow: 0px 1.48649px 2.97297px 0px rgba(0, 0, 0, 0.39), 0px 5.2027px 5.2027px 0px rgba(0, 0, 0, 0.34), 0px 11.14865px 6.68919px 0px rgba(0, 0, 0, 0.20), 0px 19.32433px 7.43243px 0px rgba(0, 0, 0, 0.06), 0px 30.47297px 8.17568px 0px rgba(0, 0, 0, 0.01);
-    margin-right: 31.62px;
-    justify-content: center;
-    margin-top: 40px;
-    color: #000;
-    font-family: Lato;
-    font-size: 29.73px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    cursor: pointer;
+    width: 40.378px;
+    height: 45.89px;
     z-index: 1;
+    font-family: Lato;
 } 
 
 .button-clicked{
-    background: #DD6E42;
-    transition: background-color 0.2s;
+    background: #DD6E42 !important;
+    transition: background-color 0.2s !important;
 }
 
 
 .kick-icon{
     position: absolute;
     z-index: 100;
-    margin-top: 300px;
-    margin-left: 50px;
+    margin-top: 200px;
+    margin-left: 40px;
     color: #DD6E42;
+    width: 40.862px;
 }
 
 .snare-icon{
     position: absolute;
     z-index: 100;
-    margin-top: -0px;
-    margin-left: 300px;
-    width: 51.862px;
-    height: 64px;
+    margin-top: 70px;
+    margin-left: 150px;
+    width: 40.862px;
     color: #DD6E42;
 }
 
 .perc1-icon{
     position: absolute;
     z-index: 100;
-    margin-top: -300px;
-    margin-left: 150px;
+    margin-top: -100px;
+    margin-left: 70px;
+    width: 40.862px;
 }
 
 .hh-icon{
     position: absolute;
     z-index: 100;
-    margin-top: -200px;
-    margin-left: 590px;
+    margin-top: -100px;
+    margin-left: -250px;
     color: #DD6E42;
+    width: 40.862px;
 }
 
 .oh-icon{
     position: absolute;
     z-index: 100;
-    margin-top: -230px;
-    margin-left: -480px;
+    margin-top: -100px;
+    margin-left: 250px;
     color: #DD6E42;
+    width: 40.862px;
 }
 
 .perc3-icon{
     position: absolute;
     z-index: 100;
     margin-top: 60px;
-    margin-left: -500px;
+    margin-left: -220px;
     color: #DD6E42;
+    width: 40.862px;
 }
 
 .perc2-icon{
     position: absolute;
     z-index: 100;
-    margin-top: -300px;
+    margin-top: 0px;
     margin-left: -70px;
     color: #DD6E42;
+    width: 40.862px;
 }
 
 
@@ -132,4 +123,93 @@ body{
     background-color: #f8f9fa;
     color: #212529;
     border: 1px solid #212529;
+  }
+
+  .batteria{
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(Batteria.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 600px) {
+    .batteria{
+        min-width: 600px;
+        min-height: 600px;
+        background-image: url(Batteria.png);
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .letter-w, .letter-a, .letter-s, .letter-d, .letter-f, .letter-g, .letter-h, .letter-j {
+        width:  60px;
+        height: 66px;
+        z-index: 1;
+        font-family: Lato;
+    } 
+
+    .kick-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: 250px;
+        margin-left: 40px;
+        color: #DD6E42;
+        width: 50px;
+    }
+
+    .snare-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: 40px;
+        margin-left: 180px;
+        color: #DD6E42;
+        width: 50px;
+    }
+
+    .perc1-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: -200px;
+        margin-left: 70px;
+        width: 50px;
+    }
+
+    .hh-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: -200px;
+        margin-left: -350px;
+        color: #DD6E42;
+        width: 50px;
+    }
+
+    .oh-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: -150px;
+        margin-left: 250px;
+        color: #DD6E42;
+        width: 50px;
+    }
+
+    .perc3-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: 60px;
+        margin-left: -320px;
+        color: #DD6E42;
+        width: 50px;
+    }
+
+    .perc2-icon{
+        position: absolute;
+        z-index: 100;
+        margin-top: -200px;
+        margin-left: -150px;
+        color: #DD6E42;
+        width: 50px;
+    }
   }
