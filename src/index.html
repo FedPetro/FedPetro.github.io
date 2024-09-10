@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- font bottone home e h1 progetto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- tailwind -->
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- bypassa errore in console -->
+    <base href="/">
+
+    <!-- mio css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calcolatrice</title>
+</head>
+<body >
+
+    <div class="w-100 flex justify-center mt-4">
+        <a href="/index.html" class="text-numbers">
+            <button class="bg-homeButton rounded-md px-3 py-2 border hover:border-homeButton hover:bg-bgHoverButton hover:text-homeButton duration-100">Torna alla Home</button>
+        </a>
+    </div>
+
+    <div class="titolo ">
+        <h1 class="w-100 justify-center text-center md:mt-20 mt-10 font-[Lexend] font-bold text-2xl md:text-4xl">CALCOLATRICE</h1>
+    </div>
+
+    <!-- <h1 class="w-full flex justify-center mt-12 font-bold text-2xl">Calcolatrice</h1> -->
+   <section class="calcolatrice flex justify-center content-center md:mt-20 mt-10 drop-shadow-4xl">
+        <div class="calc bg-primary rounded-3xl">
+            <div class="h-40 flex items-center justify-end flex-col">
+                <p class="text-numbers w-full flex justify-end pe-7 font-display font-bold text-lg mb-2 h-8" data-previous></p>
+                <p class="text-numbers w-full flex justify-end pe-7 ps-7 font-display font-bold text-4xl mb-5 h-10" data-current></p>
+            </div>
+
+            <div class="tasti-box bg-secondary rounded-3xl ">
+                <div class="grid grid-cols-4">
+                    <button class="text-functions flex justify-center items-center h-20 hover:bg-functions hover:text-numbers col-span-2 rounded-2xl font-display font-bold text-xl duration-150" data-clear>AC</button>  <!-- col-span-2 permette di estendersi su 2 colonne-->
+                    <button class="text-functions flex justify-center items-center h-20   hover:bg-functions  hover:text-numbers rounded-2xl font-display font-bold text-2xl duration-150" data-delete>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75 14.25 12m0 0 2.25 2.25M14.25 12l2.25-2.25M14.25 12 12 14.25m-2.58 4.92-6.374-6.375a1.125 1.125 0 0 1 0-1.59L9.42 4.83c.21-.211.497-.33.795-.33H19.5a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-9.284c-.298 0-.585-.119-.795-.33Z" />
+                        </svg>
+                    </button>
+                    <button class="text-operators flex justify-center items-center h-20  hover:bg-operators  hover:text-numbers rounded-2xl font-display font-bold text-xl duration-150" data-operation="">÷</button>
+                </div>
+                <div class="grid grid-cols-4">
+                    <button class="text-numbers flex justify-center items-center h-20 w-20 hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>7</button>
+                    <button class="text-numbers flex justify-center  items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>8</button>
+                    <button class="text-numbers flex justify-center  items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>9</button>
+                    <button class="text-operators flex justify-center items-center h-20 w-20  hover:bg-operators  hover:text-numbers rounded-2xl font-display font-bold text-xl duration-150" data-operation>x</button>
+                </div>
+                <div class="grid grid-cols-4">
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>4</button>
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>5</button>
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>6</button>
+                    <button class="text-operators flex justify-center items-center h-20 w-20  hover:bg-operators  hover:text-numbers rounded-2xl font-display font-bold text-xl duration-150" data-operation>-</button>
+                </div>
+                <div class="grid grid-cols-4">
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>1</button>
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>2</button>
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>3</button>
+                    <button class="text-operators flex justify-center items-center h-20 w-20  hover:bg-operators  hover:text-numbers rounded-2xl font-display font-bold text-xl duration-150" data-operation>+</button>
+                </div>
+                <div class="grid grid-cols-4">
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>0</button>
+                    <button class="text-numbers flex justify-center items-center h-20 w-20  hover:bg-numbers  hover:text-primary rounded-2xl font-display font-bold text-xl duration-150" data-number>.</button>
+                    <button class="text-functions flex justify-center items-center h-20 hover:bg-functions rounded-2xl hover:text-numbers col-span-2 font-display font-bold text-xl duration-150" data-equals>=</button>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <script src="\Progetti\Calcolatrice\script.js"></script>
+</body>
+</html>
