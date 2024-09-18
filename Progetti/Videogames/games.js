@@ -11,41 +11,27 @@ fetch('./data.json')                            //collegamento al file json
         //selezione navbar
         let navbar = document.querySelector('#navbar');
         
-        //evento scroll
-        window.addEventListener ('scroll', () => {
-            if (window.scrollY > 400){     
-                navbar.classList.remove('fixed-top');
-                navbar.classList.add('widthScroll');
-                navbar.classList.add('fixed-bottom')
-                navbar.classList.add('w-100');
-                navbar.classList.add('ms-0');
-            }else {
-                navbar.classList.remove('fixed-bottom');
-                navbar.classList.remove('widthScroll');
-                navbar.classList.add('fixed-top')
-            }
-        });
         
         row.innerHTML = ''; //svuoto il contenitore ogni volta che lancio la funzione altrimenti vedrei sempre tutte le carte, anche se filtro per categorie... Quelle filtrate le vedrei all'ultimo
         array.forEach((game) => {
             let divCol = document.createElement('div');  //creo il div della colonna 
-            divCol.classList.add('col-6', 'col-md-4');  //gli do le classi per farlo diventare una colonna bootstrap
+            divCol.classList.add('col-6', 'col-md-4', 'mb-4');  //gli do le classi per farlo diventare una colonna bootstrap
             //modifico il contenuto della colonna con quello che scriverei in html (innerHTML)
             divCol.innerHTML = ` 
             <div class="card border-0 position-relative marginCard" >
-            <img src="${game.url}" class="card-img-top imageCard" alt="...">
-            <i class="bi bi-cart"></i>
-            <div class="card-body">
-            <h5 class="card-title displayFont text-light text-truncate" title="${game.title}">${game.title}</h5>
-            <p class="textFont">${game.price} </p>
-            <p class="textFont">${game.genre} </p>
-            </div>
-            <div class="consoles pt-2 text-center">
-            <img src="./media/svg_.svg" alt="" class="consoleSize">
-            <img src="./media/svg_ (1).svg" alt="" class="consoleSize">
-            <img src="./media/svg_ (2).svg" alt="" class="consoleSize">
-            <img src="./media/svg_ (3).svg" alt="" class="consoleSize">
-            </div>
+                <img src="${game.url}" class="card-img-top imageCard" alt="...">
+                <i class="bi bi-cart"></i>
+                    <div class="card-body titlesPageCard">
+                        <h5 class="card-title displayFont text-black text-truncate" title="${game.title}">${game.title}</h5>
+                        <p class="textFont text-black">${game.price} </p>
+                        <p class="textFont text-black">${game.genre} </p>
+                    </div>
+                <div class="consoles pt-2 text-left">
+                    <img src="./media/svg_.svg" alt="" class="consoleSize">
+                    <img src="./media/svg_ (1).svg" alt="" class="consoleSize">
+                    <img src="./media/svg_ (2).svg" alt="" class="consoleSize">
+                    <img src="./media/svg_ (3).svg" alt="" class="consoleSize">
+                </div>
             </div>
             `
             row.appendChild(divCol);

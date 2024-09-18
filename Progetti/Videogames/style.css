@@ -1,6 +1,6 @@
 
 :root{   
-    --main: #DCF2F1;
+    --main: #ffffff;
     --sec: #7FC7D9;
     --third: #365486;
     --accent: #0F1035;
@@ -34,6 +34,12 @@ p {
     font-weight: 700;
 }
 
+.displayFontBanner{
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 30px;
+}
+
 .textFont{
     font-family: fira sans;
     font-weight: 500;
@@ -59,9 +65,16 @@ p {
 
 /* home */
 .btnTitoli:hover{
-    transition: 0.5s;
-    scale: 1.2 !important;
-    background-color: var(--accent) !important;
+    background-color: var(--main);
+    color: var(--accent);
+    border: solid 2px var(--accent);
+}
+
+.aTitoli:hover{
+    color: var(--accent);
+}
+
+a{
     color: var(--main);
 }
 
@@ -105,7 +118,7 @@ p {
 }
 
 .bgImg{
-    background-image: url(./media/iscrBanner.jpg) ;
+    background-image: url(./media/PoP.png) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -168,7 +181,7 @@ p {
 }
 
 .card-body{
-    background-color: var(--third);
+    background-color: var(--main);
 }
 
 .card-title{
@@ -184,7 +197,7 @@ p {
 }
 
 .consoles{
-    background-color: var(--accent);
+    background-color: var(--main);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -245,4 +258,8 @@ p {
 
  .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.titlesPageCard{
+    max-height: 100px;
 }

@@ -8,25 +8,25 @@ let number6 = document.querySelector('.number6');
 
 
 // scroll navbar: da su a giù e più piccola senza transizione
-window.addEventListener ('scroll', () => {
-    if (window.scrollY > 400){     
-        navbar.classList.remove('fixed-top');
-        navbar.classList.add('widthScroll');
-        navbar.classList.add('fixed-bottom');
-        navbar.classList.add('w-100');
-        navbar.classList.add('ms-0');
-    }else {
-        navbar.classList.remove('fixed-bottom');
-        navbar.classList.remove('widthScroll');
-        navbar.classList.add('fixed-top')
-    }
-});
+// window.addEventListener ('scroll', () => {
+//     if (window.scrollY > 400){     
+//         navbar.classList.remove('fixed-top');
+//         navbar.classList.add('widthScroll');
+//         navbar.classList.add('fixed-bottom');
+//         navbar.classList.add('w-100');
+//         navbar.classList.add('ms-0');
+//     }else {
+//         navbar.classList.remove('fixed-bottom');
+//         navbar.classList.remove('widthScroll');
+//         navbar.classList.add('fixed-top')
+//     }
+// });
 
 
 let games = [
-    {name : 'Assassins Creed Shadows', price : '60€', genre : 'Action RPG', photo : './media/AC.png'},
+    {name : 'Assassins Creed Shadows', price : '60€', genre : 'Action RPG', photo : './media/AC-card.png'},
     {name : 'Skull and Bones', price : '40€', genre : 'Action-Adventure', photo : './media/skull-and-bones.png'},
-    {name : 'XDefiant', price : 'Free', genre : 'FPS', photo : './media/XDefiant.png'},
+    {name : 'XDefiant', price : 'Free', genre : 'FPS', photo : './media/XDefiant-card.png'},
     {name : 'Star Wars', price : '60€', genre : 'Action-Adventure', photo : './media/starwars.png'},
     {name : 'Assassins Creed Mirage', price : '45€', genre : 'Action RPG', photo : './media/acm.png'},
     {name : 'The Crew Motorfest', price : '35€', genre : 'Racing', photo : './media/tcm.png'},
@@ -42,21 +42,21 @@ function createCards(){
         divCol.classList.add('col-12', 'col-md-2', 'd-flex', 'justify-content-center');
         divCol.innerHTML = `
         <div class="card border-0 position-relative mb-3" style="width: 18rem;">
-                        <img src="${game.photo}" class="card-img-top" alt="...">
-                        <i class="bi bi-cart"></i>
-                        <div class="card-body">
-                        <h5 class="card-title displayFont">${game.name}</h5>
-                        <p class="textFont">${game.price} </p>
-                        <p class="textFont">${game.genre} </p>
-                        <p class="textFont number1 mt-2">Più di 0 utenti</p>
-                        </div>
-                            <div class="consoles pt-2">
-                                <img src="./media/svg_.svg" alt="" class="consoleSize">
-                                <img src="./media/svg_ (1).svg" alt="" class="consoleSize">
-                                <img src="./media/svg_ (2).svg" alt="" class="consoleSize">
-                                <img src="./media/svg_ (3).svg" alt="" class="consoleSize">
-                            </div>
+            <img src="${game.photo}" class="card-img-top" alt="...">
+                <i class="bi bi-cart"></i>
+                    <div class="card-body text-start">
+                        <h5 class="card-title displayFont text-black text-truncate">${game.name}</h5>
+                        <p class="textFont text-black">${game.price} </p>
+                        <p class="textFont text-black">${game.genre} </p>
+                        <p class="textFont number1 mt-2 text-black">Più di 0 utenti </p>
                     </div>
+                <div class="consoles pt-2 text-start">
+                    <img src="./media/svg_.svg" alt="" class="consoleSize">
+                    <img src="./media/svg_ (1).svg" alt="" class="consoleSize">
+                    <img src="./media/svg_ (2).svg" alt="" class="consoleSize">
+                    <img src="./media/svg_ (3).svg" alt="" class="consoleSize">
+                </div>
+        </div>
         `
         row.appendChild(divCol);       
 }) 

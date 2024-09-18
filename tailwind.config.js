@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,css}"],
   theme: {
     extend: {
+      // calcolatrice
       colors:{
         'primary' : '#22252d', 
         'secondary': '#292d36', 
