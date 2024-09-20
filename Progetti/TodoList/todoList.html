@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Petrocchi Portfolio</title>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="media/img/favicon.svg"> <!-- da aggiungere -->
+    
+    <!-- icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- aos css-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    <!-- mio css -->
+    <link rel="stylesheet" href="./todolistStyle.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html"></i>Home</a>      
+            <div class="d-flex flex-row align-items-md-center w-100 justify-content-around pt-2">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" aria-current="page" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#funzionalit">Funzionalità</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#repository">Repository</a>
+                    </li>
+                </ul>
+            </div>       
+        </div>
+    </nav>
+    
+    
+    <section class="videoSection d-flex vh-100 flex-column justify-content-around" id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h1 class="text-center mt-md-3">Todo List</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <video src="./media/todoList.mp4" type="video/mp4" controls autoplay controlsList="nodownload" class="video d-flex justify-content-center w-100">
+                    </video>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around mt-3">
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="html">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">HTML</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="tailwind">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">Tailwind</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-2 col-md-2">
+                    <div class="lingDiv d-flex flex-column align-items-center">
+                        <div class="ling lingMob"  id="react">
+                        </div>
+                        <div class="lingText d-flex justify-content-center">
+                            <p class="fs-6 fw-bold">React</p>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div> 
+        </div>
+    </section>
+    
+    <section class="funz d-flex flex-column mt-3" id="funzionalit">
+        <div class="container mt-5 d-flex">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h2>Funzioni Principali</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-3">           
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-person-circle me-2"></i>Gestione dell'input utente</h4>
+                </div>
+            </div>
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>L'utente potrà inserire il Task sia cliccando sul pulsante "+" che premendo il tasto Enter tramite due diversi eventi.</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-plus-circle-fill"></i> Aggiunta di un Task</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>Il Task verrà aggiunto solo se è descritto nell'input, non verrà aggiunto quindi se il campo rimane vuoto.</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-x-circle-fill"></i> Eliminazione di un Task</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>L'utente può cancellare un Task tramite un click sul bottone "x".</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-arrow-down-up me-2"></i>Riordinamento dei Task</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>Tramite le frecce presenti nel Task aggiunto, l'utente ha la possbilità di spostarlo verso l'alto o verso il basso.</p>
+                </div>
+            </div>
+            
+            <div class="row d-flex flex-column flex-md-row mt-5">
+                <div class="col-12 col-md-6">
+                    <h4><i class="bi bi-search me-2"></i>Task completato</h4>
+                </div>
+            </div> 
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>L'utente una volta completato il Task può depennarlo cliccando sul bottone "check", questo porterà il task in fondo alla lista. <br> L'operazione è reversibile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5 d-flex">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h2>Struttura e Gestione degli Stati</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3">           
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h4><i class="bi bi-person-circle me-2"></i>Hooks</h4>
+                </div>
+            </div>
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-12 col-md-12">
+                    <p>L'app utilizza l'hook <span class="paroleEvid">useState</span> per mantenere e aggiornare due stati principali:</p>
+                        <ol>
+                            <li><p><span class="fw-bold">tasks</span>: un array che memorizza la lista dei task. Ogni task è un oggetto che ha due proprietà</p></li>
+                                <ul>
+                                    <li><p><span class="paroleEvid">text</span>: il testo del task.</p></li>
+                                    <li><p><span class="paroleEvid">completed</span>: un booleano che indica se il task è completato.</p></li>
+                                </ul>
+                            <li><p><span class="fw-bold">newTask</span>: una stringa che rappresenta l'input dell'utente, ovvero il testo del task che si sta aggiungendo.</p></li>
+                        </ol>
+                    
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <section class="repo d-flex flex-column" id="repository">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-12 ">           
+                    <h4>Guarda la Repository:</h4>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 d-flex">
+                        <p class="fs-4 fw-bold"><i class="bi bi-github blackGithub me-2"></i></p>
+                        <p class="fs-4 fw-bold"><a href="https://github.com/FedPetro/TodoList_React">Todo List</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        <div class="container mt-3 mb-5">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="indietro d-flex justify-content-center">
+                        <div class="homeBtn">
+                            <a href="/index.html"><button class="btn">Torna alla Home</button></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 copyright">© Federico Petrocchi</span>
+        </div>
+        
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="mailto:petrocchi.federico@gmail.com"><i class="bi bi-envelope me-2 display-6"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/federico-petrocchi/"><i class="bi bi-linkedin me-2 display-6"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/FedPetro"><i class="bi bi-github me-2 display-6"></i></a></li>
+        </ul>
+    </footer>   
+    
+    
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    
+    <!-- gsap scrolltrigger-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    
+    <!-- gsapscrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    
+    <!-- gsap text -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- mio js -->
+    <script src="script.js"></script>      
+</body>
+
+
+
+
+
+
+
+
+
+</html>

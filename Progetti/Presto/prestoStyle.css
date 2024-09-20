@@ -1,0 +1,269 @@
+
+:root{
+    /* --main: #f8f9fa;
+    --sec: #212529;
+    --third: #adb5bd;
+    --accent: #dee2e6;    */
+    
+    --main: #f8f9fa;
+    --sec: #212529;
+    --third: #348AA7;
+    --accent: #827191;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--main);
+  }
+
+  #bg{
+    z-index: -100;
+    position:absolute;
+    width:100%;
+    min-height:100vh
+}
+
+h1, h2, h3, h4, h5, p {
+  color: var(--sec);
+  font-family: Lexend;
+}
+
+
+p{
+  font-family: Zilla Slab;
+  font-weight: 500;
+  color: var(--sec);
+}
+
+a{
+  text-decoration: none;
+  color: var(--sec);
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+
+
+/* navbar */ 
+nav{
+  background-color: none !important;
+}
+
+.logoImg{
+  width: 35px;
+}
+
+.nav-link, .navbar-brand {
+  color: var(--sec);
+  font-weight: bold;
+  font-family: Lexend;
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+  /* color: var(--main); */
+}
+
+
+
+
+/* icona navbar */
+
+/* nome e foto */
+
+  .nomeFoto{
+    /* margin-top: 100px; */
+  }
+
+  .foto{
+    background-image: url(media/profilePic.png);
+    background-position: contain;
+    background-repeat: no-repeat;
+  }
+
+  .btn{
+    background-color: var(--sec);
+    border: none;
+    color: var(--main);
+  }
+
+  .btn:hover{
+    background-color: var(--main);
+    color: var(--sec);
+    border: 1px solid var(--sec);
+  }
+
+
+/* skills */
+  .ling{
+    background-color: var(--main);
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+
+
+  #html{
+   background-image: url("../loghiLing/html.png");
+   background-position: center;
+   background-repeat: no-repeat;
+  }
+
+  #css{
+    background-image: url("../loghiLing/css.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #js{
+    background-image: url("../loghiLing/js.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #tailwind{
+    background-image: url("../loghiLing/tailwind.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #bootstrap{
+    background-image: url("../loghiLing/bootstrap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #figma{
+    background-image: url("../loghiLing/figma.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #php{
+    background-image: url("../loghiLing/php.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #laravel{
+    background-image: url("../loghiLing/laravel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #livewire{
+    background-image: url("../loghiLing/livewire.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #github{
+    background-image: url("../loghiLing/github.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   #react{
+    background-image: url("../loghiLing/react.png");
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+
+   .aulab{
+    text-decoration: underline;
+    color: var(--accent);
+   }
+
+   /* progetti */
+
+   .progetti{
+    margin-top: 200px;
+   }
+
+   .banner{
+    background-color: var(--accent);
+    color: var(--main);
+   }
+
+
+   /* presto */
+
+   .video{
+    width: 50vh;
+   }
+
+   .box1, .boxText{
+    width: 200px;
+    height: 200px;
+   }
+
+   @media screen and (max-width: 600px) {
+    .lingMob {
+      height: 50px;
+      width: 50px;
+    }
+
+    #html{
+      background-image: url("../loghiLing/html.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
+
+     #css{
+      background-image: url("../loghiLing/css.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
+
+     #bootstrap{
+      background-image: url("../loghiLing/bootstrap.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
+
+     #laravel{
+      background-image: url("../loghiLing/laravel.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
+
+     #livewire{
+      background-image: url("../loghiLing/livewire.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
+
+     #react{
+      background-image: url("../loghiLing/react.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+     }
+  }
+
+  .repo{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer{
+    background-color: var(--sec);
+  }
+
+  .copyright, .bi-envelope, .bi-linkedin, .bi-github{
+    color: var(--main);
+  }
+
+.blackGithub{
+  color: var(--sec);
+}
